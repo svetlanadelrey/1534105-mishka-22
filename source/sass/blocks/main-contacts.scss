@@ -1,0 +1,26 @@
+.main-contacts__wrapper {
+  outline: 5px solid rgba(55, 0, 255, 0.8);
+  outline-offset: -5px;
+}
+
+.contacts__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__list {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.main-contacts__write {
+  text-decoration: none;
+}

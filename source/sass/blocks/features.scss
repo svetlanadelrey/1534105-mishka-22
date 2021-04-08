@@ -1,0 +1,21 @@
+.features__wrapper {
+  outline: 5px solid rgba(255, 0, 149, 0.8);
+  outline-offset: -5px;
+}
+
+.features__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.features__list {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  list-style: none;
+  padding: 0;
+}

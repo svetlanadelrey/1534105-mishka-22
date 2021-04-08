@@ -1,0 +1,44 @@
+.main-menu__wrapper {
+  min-height: 283px;
+  background-color: $white;
+  background-image: url("../img/hero-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.main-menu__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.main-menu__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-menu__button {
+  display: block;
+  text-decoration: none;
+
+  p {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+.left-button {
+  background-color: $tiffany;
+}
+
+.right-button {
+  background-color: $aquamarine;
+}
+
