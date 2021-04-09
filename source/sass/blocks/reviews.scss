@@ -1,0 +1,35 @@
+.reviews__wrapper {
+  outline: 5px solid rgba(0, 255, 13, 0.8);
+  outline-offset: -5px;
+}
+
+.reviews__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.reviews__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__author-nickname {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__write {
+  text-decoration: none;
+}

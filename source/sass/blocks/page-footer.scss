@@ -1,0 +1,13 @@
+.page-footer__wrapper {
+  background-color: $grey;
+
+  outline: 5px solid rgba(217, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.copyright__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+}
