@@ -1,0 +1,21 @@
+.form-description {
+  background-color: $grey;
+
+  outline: 5px solid #18b618cc;
+  outline-offset: -5px;
+}
+
+.form-description__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+}
+
+.form-description__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grafit;
+}
