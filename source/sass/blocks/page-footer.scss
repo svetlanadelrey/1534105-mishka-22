@@ -1,8 +1,35 @@
-.page-footer__wrapper {
+.page-footer {
   background-color: $grey;
+}
+
+.page-footer__wrapper {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 
   outline: 5px solid rgba(217, 255, 0, 0.8);
   outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .copyright__text {
@@ -10,4 +37,9 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
 }

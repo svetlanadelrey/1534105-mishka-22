@@ -1,12 +1,28 @@
+.main-menu {
+  background-color: $grey;
+  min-height: 489px;
+}
+
 .main-menu__wrapper {
-  min-height: 283px;
-  background-color: $white;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("../img/hero-mobile.jpg");
+  min-height: 489px;
   background-position: 0 0;
   background-repeat: no-repeat;
 
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .main-menu__title {
@@ -14,16 +30,23 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .main-menu__buttons {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .main-menu__button {
-  display: block;
   text-decoration: none;
+  min-width: 320px;
 
   p {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -36,8 +59,10 @@
 
 .left-button {
   background-color: $tiffany;
+  flex-grow: 1;
 }
 
 .right-button {
   background-color: $aquamarine;
+  flex-grow: 1;
 }
