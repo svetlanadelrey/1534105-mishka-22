@@ -1,0 +1,31 @@
+.catalog__item {
+  outline: 5px solid rgba(89, 0, 255, 0.8);
+  outline-offset: -5px;
+}
+
+.item__link {
+  color: $black;
+  text-decoration: none;
+}
+
+.item__link-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.item__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $grafit;
+}
+
+.item__price {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
