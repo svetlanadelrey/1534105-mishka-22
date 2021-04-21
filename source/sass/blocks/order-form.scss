@@ -1,0 +1,55 @@
+.order-form__wrapper {
+  outline: 5px solid #b700ffcc;
+  outline-offset: -5px;
+}
+
+.order-form__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.order-form__label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.form-filter {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.text-input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+.contacts-input {
+  box-shadow: inset 0 -2px 0 $black;
+}
+
+.extra-input {
+  border: 2px solid $grafit;
+}
+
+.order-form__notice {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grafit;
+}
