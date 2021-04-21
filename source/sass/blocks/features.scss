@@ -1,6 +1,18 @@
 .features__wrapper {
+  width: 280;
+  margin: 0 auto;
+  padding: 0 20px;
   outline: 5px solid rgba(255, 0, 149, 0.8);
   outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .features__title {
@@ -18,4 +30,17 @@
   font-weight: 700;
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+    height: 639px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.features__item {
+  padding-top: 83px;
+  width: 260px;
 }
