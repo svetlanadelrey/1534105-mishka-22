@@ -1,8 +1,22 @@
-.form-description {
-  background-color: $grey;
+.form-description__wrapper {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
 
-  outline: 5px solid #18b618cc;
-  outline-offset: -5px;
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.form-description__header {
+  background-color: $grey;
+  text-align: center;
+  min-height: 177px;
 }
 
 .form-description__title {
@@ -11,6 +25,7 @@
   line-height: 30px;
   font-weight: 700;
   color: $black;
+  margin: 0;
 }
 
 .form-description__text {
