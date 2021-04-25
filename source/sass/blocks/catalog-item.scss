@@ -1,6 +1,32 @@
+.catalog__wrapper {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .catalog__item {
-  outline: 5px solid rgba(89, 0, 255, 0.8);
-  outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .item__link {
