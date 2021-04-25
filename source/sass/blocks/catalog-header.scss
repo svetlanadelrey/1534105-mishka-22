@@ -1,5 +1,14 @@
 .catalog__header {
   background-color: $grey;
-  outline: 5px solid rgba(255, 0, 149, 0.8);
-  outline-offset: -5px;
+  height: 177px;
+  text-align: center;
+}
+
+.catalog__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
 }
