@@ -3,8 +3,13 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  height: 48px;
+  text-align: center;
   color: $grafit;
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $grafit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
