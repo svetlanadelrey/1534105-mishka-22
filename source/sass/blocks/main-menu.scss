@@ -4,9 +4,6 @@
 }
 
 .main-menu__wrapper {
-  width: auto;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,13 +13,25 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    width: auto;
+    min-height: 746px;
     padding: 0 50px;
+    margin: 0 auto;
+    background-image: url("../img/hero-desktop.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+    margin: 0 auto;
   }
+}
+
+.main-menu__header {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .main-menu__title {
@@ -32,6 +41,13 @@
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
+  padding-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 154px;
+  }
 }
 
 .main-menu__buttons {
@@ -41,28 +57,61 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-basis: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 
 .main-menu__button {
   text-decoration: none;
-  min-width: 320px;
+  min-height: 103px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  p {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: 700;
-    color: $white;
+.button__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+  padding-left: 30px;
+  padding-top: 24px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .left-button {
   background-color: $tiffany;
-  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    flex-basis: auto;
+  }
 }
 
 .right-button {
   background-color: $aquamarine;
-  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+}
+
+.left-button__icon {
+  padding-top: 23px;
+  padding-right: 30px;
+}
+
+.right-button__icon {
+  padding-top: 21px;
+  padding-right: 30px;
 }

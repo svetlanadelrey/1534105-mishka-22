@@ -1,9 +1,9 @@
 .popular-product__wrapper {
   width: auto;
   margin: 0 auto;
-  padding: 0 20px;
-  outline: 5px solid rgba(68, 0, 255, 0.8);
-  outline-offset: -5px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 668;
@@ -15,11 +15,19 @@
       "price img"
       "button img";
     grid-template-columns: 292px 1fr;
-    grid-template-rows: auto auto auto 52px;
+    grid-template-rows: auto auto  52px;
+    grid-column-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
+    width: 1050px;
+    grid-template-areas:
+      "header header img"
+      ". desc img"
+      ". price img"
+      ". button img";
+    grid-template-columns: 100px 292px 1fr;
+    margin-top: 54px;
   }
 }
 
@@ -27,8 +35,10 @@
   display: flex;
   flex-direction: column;
   grid-area: header;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
     min-width: 668px;
     flex-direction: row;
     justify-content: space-between;
@@ -40,10 +50,18 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
   color: $tiffany;
   margin: 0;
   padding: 0;
   order: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    line-height: 17px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .popular-product__subtitle {
@@ -53,11 +71,33 @@
   font-weight: 700;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    order: 2;
+    z-index: 2;
+  }
 }
 
 .popular-product__description {
   min-width: 260px;
   grid-area: desc;
+  margin-bottom: 28px;
+}
+
+.popular-product__text {
+  margin: 0;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
 }
 
 .popular-product__price {
@@ -67,14 +107,42 @@
   font-weight: 700;
   color: $grafit;
   margin: 0;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  text-align: center;
   grid-area: price;
 }
 
 .popular-product__image {
-  width: 260px;
+  width: auto;
   grid-area: img;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    min-width: 334px;
+  }
 }
 
 .popular-product__order {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
   grid-area: button;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    align-self: end;
+  }
+}
+
+.popular-product__specification {
+  width: 260px;
+  padding: 0 30px;
+  border-collapse: collapse;
+
+  td {
+    border-bottom: 1px solid $border-grey;
+    padding-right: 20px;
+    padding-bottom: 12px;
+  }
 }

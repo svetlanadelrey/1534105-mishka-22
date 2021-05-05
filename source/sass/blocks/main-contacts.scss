@@ -10,8 +10,6 @@
     "button";
   grid-template-rows: 50px 170px 1fr 52px;
   grid-template-columns: 1fr;
-  outline: 5px solid rgba(55, 0, 255, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -35,6 +33,18 @@
   line-height: 30px;
   font-weight: 700;
   grid-area: title;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 142px;
+  }
 }
 
 .contacts__list {
@@ -55,14 +65,35 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    padding-left: 142px;
   }
 }
 
 .main-contacts__write {
   text-decoration: none;
   grid-area: button;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    justify-self: start;
+    margin-left: 142px;
+  }
 }
 
 .main-contacts__img {
   grid-area: map;
+  margin-bottom: 42px;
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.description__link {
+  border-bottom: 1px solid $border-aquamarine;
 }
