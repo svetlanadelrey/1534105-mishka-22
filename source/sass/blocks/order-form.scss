@@ -37,6 +37,10 @@
   padding-bottom: 30px;
 }
 
+.title-extra {
+  padding-bottom: 21px;
+}
+
 .order-form__label {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -126,7 +130,12 @@
 }
 
 .extra-input {
+  height: 136px;
   border: 2px solid $grafit;
+
+  &::placeholder {
+    padding: 15px 15px;
+  }
 }
 
 .order-form__notice {
@@ -134,7 +143,9 @@
   font-size: 14px;
   line-height: 16px;
   color: $grafit;
-  text-align: center;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -144,8 +155,10 @@
 }
 
 .order-form__button {
+  height: 52px;
   display: flex;
   align-items: center;
+  margin-bottom: 58px;
 }
 
 .order-form__type {
@@ -279,6 +292,10 @@
   @media (min-width: $desktop-width) {
     right: 230px;
   }
+}
+
+.order-form__email {
+  padding-bottom: 13px;
 }
 
 .order-form__email-icon {
