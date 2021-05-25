@@ -8,21 +8,25 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <div class="main-nav__list">
             <a class="page-header__logo">
-              <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - милые штуки ручной работы для дома">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                <img src="img/mishka-logo-mobile.svg" alt="Мишка - милые штуки ручной работы для дома">
+              </picture>
             </a>
             <ul class="site-list">
               <li class="site-list__item">
-                <a href="#">
+                <a class="site-list__link" href="#">
                   Каталог товаров
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="#">
+                <a class="site-list__link" href="#">
                   Вязание на заказ
                 </a>
               </li>
@@ -46,6 +50,13 @@
               </a>
             </div>
           </div>
+          <div class="extra-list__wrapper">
+            <p class="extra-list">
+              <a class="extra-list__link" href="#">Новые поступления</a>
+              <a class="extra-list__link" href="#">Распродажа</a>
+            </p>
+            <p class="extra-text">Бесплатная доставка по России</p>
+          </div>
         </div>
       </nav>
     </header>
@@ -64,7 +75,7 @@
           <h2 class="visually-hidden">Заполните форму</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="order-form__type form-filter">
-              <legend class="order-form__title">Тип</legend>
+              <legend class="order-form__title title-type">Тип</legend>
               <div class="input__wrapper">
                 <input class="visually-hidden order-form__input-radio" id="accessories" name="filter-type" type="radio" checked>
                 <label for="accessories" class="order-form__label label-radio">Аксессуар для интерьера</label>
@@ -74,7 +85,7 @@
             </fieldset>
             <div class="order-form-color__wrapper">
               <fieldset class="order-form-color form-filter">
-                <legend class="order-form__title">Цвет</legend>
+                <legend class="order-form__title title-color">Цвет</legend>
                 <div class="color__wrapper">
                   <div class="input-color__item">
                     <input class="visually-hidden order-form__input-checkbox" id="white" type="checkbox" checked>
@@ -86,7 +97,7 @@
                   </div>
                   <div class="input-color__item">
                     <input class="visually-hidden order-form__input-checkbox" id="tiffany" type="checkbox">
-                    <label for="tiffany" class="order-form__label label-checkbox">"Тиффани"</label>
+                    <label for="tiffany" class="order-form__label label-checkbox">&laquo;Тиффани&raquo;</label>
                   </div>
                   <div class="input-color__item">
                     <input class="visually-hidden order-form__input-checkbox" id="black" type="checkbox">
@@ -104,7 +115,7 @@
               </fieldset>
             </div>
             <fieldset class="order-form__name form-filter">
-              <legend class="order-form__title">ФИО</legend>
+              <legend class="order-form__title title-name">ФИО</legend>
               <div class="input__wrapper name__wrapper">
                 <div class="input__item">
                   <label class="order-form__label label-name" for="name">Имя:</label>
@@ -198,7 +209,7 @@
         <div class="page-footer__copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
           </a>
         </div>
       </div>

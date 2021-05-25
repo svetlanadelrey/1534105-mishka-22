@@ -1,16 +1,19 @@
 .main-menu {
-  background-color: $grey;
   min-height: 489px;
+  background-color: $light-grey;
+  position: relative;
 }
 
 .main-menu__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $light-grey;
   background-image: url("../img/hero-mobile.jpg");
   min-height: 489px;
-  background-position: 0 0;
+  background-position: 50% -15%;
   background-repeat: no-repeat;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -18,13 +21,16 @@
     padding: 0 50px;
     margin: 0 auto;
     background-image: url("../img/hero-desktop.jpg");
-    background-position: 0 0;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin: 0 auto;
+    background-image: url("../img/hero-desktop.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -48,12 +54,19 @@
     line-height: 50px;
     padding-top: 154px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+  }
 }
 
 .main-menu__buttons {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -65,11 +78,34 @@
   }
 }
 
+.zigzag-border {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -12px;
+    height: 34px;
+  }
+}
+
 .main-menu__button {
   text-decoration: none;
   min-height: 103px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      height: 124px;
+    }
+  }
 }
 
 .button__title {
@@ -85,6 +121,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 33px;
   }
 }
 
@@ -92,6 +129,7 @@
   background-color: $tiffany;
 
   @media (min-width: $tablet-width) {
+    min-height: 119px;
     flex-grow: 1;
     flex-basis: auto;
   }
@@ -101,6 +139,7 @@
   background-color: $aquamarine;
 
   @media (min-width: $tablet-width) {
+    min-height: 119px;
     flex-grow: 1;
     flex-basis: auto;
   }
@@ -108,10 +147,20 @@
 
 .left-button__icon {
   padding-top: 23px;
-  padding-right: 30px;
+  padding-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-right: 39px;
+  }
 }
 
 .right-button__icon {
   padding-top: 21px;
-  padding-right: 30px;
+  padding-right: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+    padding-right: 34px;
+  }
 }

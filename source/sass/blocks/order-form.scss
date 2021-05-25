@@ -5,7 +5,16 @@
   font-weight: 700;
   color: $tiffany;
   text-transform: uppercase;
-  padding-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 30px;
+    width: 200px;
+    height: 1px;
+    background-color: $border-aquamarine;
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -14,6 +23,18 @@
   @media (min-width: $desktop-width) {
     padding-left: 97px;
   }
+}
+
+.title-type {
+  padding-bottom: 30px;
+}
+
+.title-color {
+  padding-bottom: 25px;
+}
+
+.title-name {
+  padding-bottom: 30px;
 }
 
 .order-form__label {
@@ -42,7 +63,7 @@
 
 .label-checkbox {
   padding-top: 10px;
-  padding-bottom: 43px;
+  padding-bottom: 35px;
   margin-left: 60px;
 
   @media (min-width: $tablet-width) {
@@ -98,7 +119,7 @@
 }
 
 .contacts-input {
-  height: 52px;
+  height: 47px;
   margin-bottom: 22px;
   background-color: transparent;
   border-bottom: 2px solid $black;
@@ -132,6 +153,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -164,6 +186,7 @@
 .input-color__item {
   display: flex;
   flex-direction: column;
+  height: 60px;
   grid-area: color-item;
 
   @media (min-width: $tablet-width) {
@@ -184,6 +207,8 @@
 }
 
 .order-form-color {
+  padding-bottom: 16px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -214,6 +239,7 @@
 }
 
 .order-form__name {
+  padding-bottom: 13px;
   display: flex;
   flex-direction: column;
 
@@ -236,6 +262,7 @@
 }
 
 .order-form__phone {
+  padding-bottom: 13px;
   display: flex;
   flex-direction: column;
 }
