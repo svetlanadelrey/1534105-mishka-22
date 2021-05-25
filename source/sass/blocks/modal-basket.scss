@@ -1,0 +1,145 @@
+.modal-basket {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: stretch;
+  align-items: center;
+  z-index: 999;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+}
+
+.modal-basket__wrapper {
+  display: none;
+  width: 318px;
+  height: 336px;
+  background-color: $white;
+  border: 1px solid $border-modal;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 564px;
+  }
+}
+
+.size-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.size-list {
+  width: 256px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 346px;
+  }
+}
+
+.size-list__item {
+  width: 78px;
+  height: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
+}
+
+.modal-basket__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 29px 80px 14px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    padding-top: 38px;
+  }
+}
+
+.modal-basket__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: $grafit;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    padding-bottom: 0;
+  }
+}
+
+.size__label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $grafit;
+  display: block;
+  text-align: center;
+  padding: 18px 21px;
+}
+
+.size__input + label {
+  position: relative;
+  cursor: pointer;
+}
+
+.size__input + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 78px;
+  height: 48px;
+  border: 2px solid $grafit;
+  opacity: 0.1;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
+}
+
+.size__input:checked + label::before {
+  border: 2px solid $tiffany;
+  opacity: 1;
+}
+
+.size-form__button {
+  width: 260px;
+  height: 52px;
+  background-color: $tiffany;
+  color: $white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  margin: 19px 30px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin: 23px 108px;
+  }
+}
