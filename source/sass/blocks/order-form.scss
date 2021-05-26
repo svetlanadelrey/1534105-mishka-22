@@ -6,14 +6,16 @@
   color: $tiffany;
   text-transform: uppercase;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    right: 30px;
-    width: 200px;
-    height: 1px;
-    background-color: $border-aquamarine;
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 30px;
+      width: 200px;
+      height: 1px;
+      background-color: $border-aquamarine;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -27,14 +29,43 @@
 
 .title-type {
   padding-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    left: 12px;
+  }
 }
 
 .title-color {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 12px;
+  }
 }
 
 .title-name {
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 12px;
+  }
+}
+
+.title-extra {
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    left: 12px;
+    top: 17px;
+  }
 }
 
 .order-form__label {
@@ -58,6 +89,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 58px;
+    padding-left: 20px;
   }
 }
 
@@ -68,6 +100,8 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 24px;
+    padding-top: 15px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,13 +154,37 @@
 
 .contacts-input {
   height: 47px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   background-color: transparent;
   border-bottom: 2px solid $black;
+
+  @media (min-width: $tablet-width) {
+    &::placeholder {
+      padding-left: 20px;
+    }
+  }
 }
 
 .extra-input {
+  height: 136px;
   border: 2px solid $grafit;
+
+  &::placeholder {
+    padding: 13px 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 495px;
+    height: 134px;
+
+    &::placeholder {
+      padding: 13px 13px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 694px;
+  }
 }
 
 .order-form__notice {
@@ -134,9 +192,13 @@
   font-size: 14px;
   line-height: 16px;
   color: $grafit;
-  text-align: center;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 10px;
     order: 2;
     font-size: 17px;
     line-height: 30px;
@@ -146,6 +208,11 @@
 .order-form__button {
   display: flex;
   align-items: center;
+  height: 52px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
 }
 
 .order-form__type {
@@ -157,6 +224,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-top: 17px;
+    padding-bottom: 5px;
   }
 }
 
@@ -170,6 +239,7 @@
 
   @media (min-width: $desktop-width) {
     width: 700px;
+    padding-left: 175px;
   }
 }
 
@@ -193,10 +263,16 @@
     flex-direction: row;
     height: 52px;
     min-width: 203px;
+    padding-right: 60px;
+
+    &:nth-child(2n) {
+      padding-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 250px;
+    padding-right: 0;
   }
 }
 
@@ -212,12 +288,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    height: 304px;
+    height: 234px;
     padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 228px;
+    height: 160px;
+    padding-top: 47px;
   }
 }
 
@@ -227,44 +304,59 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 167px;
-    min-height: 304px;
+    height: 225px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 228px;
+    height: 160px;
+    padding-left: 175px;
+    justify-content: space-between;
+    width: 780px;
   }
 }
 
 .order-form__name {
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    min-height: 304px;
-    padding-top: 67px;
+    min-height: 237px;
+    padding-top: 54px;
   }
 }
 
 .order-form-contacts {
   @media (min-width: $tablet-width) {
     background-color: $grey;
-    min-height: 228px;
-    padding-top: 50px;
+    min-height: 180px;
+    padding-top: 57px;
   }
 }
 
 .contacts-title {
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 12px;
+  }
 }
 
 .order-form__phone {
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .order-form__phone-icon {
@@ -273,7 +365,7 @@
   right: 30px;
 
   @media (min-width: $tablet-width) {
-    right: 60px;
+    right: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -287,7 +379,7 @@
   right: 30px;
 
   @media (min-width: $tablet-width) {
-    right: 60px;
+    right: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -296,6 +388,8 @@
 }
 
 .order-form__extra {
+  margin-top: 10px;
+
   @media (min-width: $tablet-width) {
     margin-top: 50px;
   }
@@ -307,64 +401,125 @@
   padding: 0 30px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
     padding: 0 50px;
     margin-top: 53px;
+    margin-bottom: 30px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 700px;
+    margin-top: 51px;
   }
 }
 
 .order-form__input-radio:checked + label {
-  &::before {
-    content: "";
-    position: absolute;
-    left: -61px;
-    top: -5px;
-    width: 42px;
-    height: 42px;
-    background-image: url("../../source/img/active.svg");
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: -5px;
+      width: 42px;
+      height: 42px;
+      background-image: url("../../source/img/active.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -59px;
+      top: -17px;
+      width: 52px;
+      height: 52px;
+      background-image: url("../../source/img/active.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 .order-form__input-radio + label {
-  &::before {
-    content: "";
-    position: absolute;
-    left: -61px;
-    top: -10px;
-    width: 42px;
-    height: 42px;
-    background-image: url("../../source/img/radio.svg");
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: -10px;
+      width: 42px;
+      height: 42px;
+      background-image: url("../../source/img/radio.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -59px;
+      top: -17px;
+      width: 52px;
+      height: 52px;
+      background-image: url("../../source/img/radio.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 .order-form__input-checkbox:checked + label {
-  &::before {
-    content: "";
-    position: absolute;
-    left: -61px;
-    top: 0;
-    width: 38px;
-    height: 38px;
-    background-image: url("../../source/img/active-check.svg");
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 0;
+      width: 38px;
+      height: 38px;
+      background-image: url("../../source/img/active-check.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 0;
+      width: 52px;
+      height: 52px;
+      background-image: url("../../source/img/active-check.svg");
+    }
   }
 }
 
 .order-form__input-checkbox + label {
-  &::before {
-    content: "";
-    position: absolute;
-    left: -61px;
-    top: 0;
-    width: 38px;
-    height: 38px;
-    background-image: url("../../source/img/border.svg");
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 0;
+      width: 38px;
+      height: 38px;
+      background-image: url("../../source/img/border.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 0;
+      width: 52px;
+      height: 52px;
+      background-image: url("../../source/img/border.svg");
+    }
   }
 }

@@ -151,6 +151,16 @@
     &:last-child {
       padding-left: 29px;
     }
+
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      right: 2px;
+      width: 1px;
+      height: 89px;
+      background-color: $border-header;
+    }
   }
 }
 
