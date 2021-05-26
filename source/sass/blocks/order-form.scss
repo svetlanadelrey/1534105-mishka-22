@@ -168,18 +168,11 @@
 .extra-input {
   height: 136px;
   border: 2px solid $grafit;
-
-  &::placeholder {
-    padding: 13px 13px;
-  }
+  padding: 13px 13px;
 
   @media (min-width: $tablet-width) {
     width: 495px;
     height: 134px;
-
-    &::placeholder {
-      padding: 13px 13px;
-    }
   }
 
   @media (min-width: $desktop-width) {

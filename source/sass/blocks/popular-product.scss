@@ -28,7 +28,7 @@
       ". desc img"
       ". price img"
       ". button img";
-    grid-template-columns: 100px 292px 1fr;
+    grid-template-columns: 127px 350px 1fr;
     grid-template-rows: 170px auto 90px 52px;
     margin-top: 54px;
   }
@@ -72,6 +72,11 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-right: 23px;
   }
 }
 
@@ -117,6 +122,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
+  }
 }
 
 .popular-product__price {
@@ -126,13 +135,19 @@
   font-weight: 700;
   color: $grafit;
   margin: 0;
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 21px;
   text-align: center;
   grid-area: price;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-top: 34px;
+    padding-left: 75px;
   }
 }
 
@@ -153,6 +168,7 @@
   grid-area: button;
 
   @media (min-width: $tablet-width) {
+    width: 292px;
     margin-bottom: 0;
     align-self: start;
     cursor: pointer;

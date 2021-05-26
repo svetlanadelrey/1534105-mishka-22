@@ -2,7 +2,7 @@
   width: auto;
   margin: 0 auto;
   padding: 0 30px;
-  margin-top: 33px;
+  margin-top: 31px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -29,7 +29,7 @@
     display: grid;
     min-height: 440px;
     grid-template-columns: 1fr 175px;
-    grid-template-rows: 52px 170px 30px 20px;
+    grid-template-rows: 52px 220px 30px 20px;
     grid-template-areas:
       "title button"
       "text text"
@@ -38,6 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-rows: 52px 175px 30px 20px;
     padding-left: 125px;
     padding-right: 50px;
   }
@@ -117,8 +118,13 @@
 
 .reviews__write {
   text-decoration: none;
+  margin-top: 25px;
   margin-bottom: 45px;
   grid-area: button;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .reviews__item--second {

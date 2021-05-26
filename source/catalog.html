@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -12,7 +12,7 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <div class="main-nav__list">
-            <a class="page-header__logo">
+            <a class="page-header__logo" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
@@ -62,8 +62,8 @@
     </header>
     <main class="page-catalog">
       <h1 class="visually-hidden">Каталог товаров интернет-магазина "Мишка"</h1>
-      <header class="catalog__header">
-        <h2 class="catalog__title">Каталог товаров</h2>
+      <header class="catalog-header">
+        <h2 class="catalog-header__title">Каталог товаров</h2>
       </header>
       <section class="catalog-list">
         <div class="catalog__wrapper">
@@ -157,10 +157,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <img src="img/logo-footer.svg" width="102" height="34" alt="Мишка - милые штуки ручной работы для дома">
         </a>
-        <div class="page-footer__social">
+        <div class="social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
@@ -188,7 +188,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
@@ -219,6 +219,6 @@
           </form>
       </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

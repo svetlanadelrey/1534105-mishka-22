@@ -1,4 +1,4 @@
-.form-description__wrapper {
+.page-form__wrapper {
   width: auto;
   margin: 0 auto;
   padding: 0 30px;
@@ -13,7 +13,7 @@
   }
 }
 
-.form-description__header {
+.page-form__header {
   background-color: $grey;
   text-align: center;
   min-height: 177px;
@@ -33,7 +33,7 @@
   }
 }
 
-.form-description__title {
+.page-form__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
@@ -54,7 +54,7 @@
   }
 }
 
-.form-description__text {
+.page-form__text {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;

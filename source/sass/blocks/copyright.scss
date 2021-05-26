@@ -1,0 +1,20 @@
+.copyright {
+  min-height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 27px;
+}
